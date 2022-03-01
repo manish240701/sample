@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+*{
+    font-family: poppins;
+}
+.review-outline-container{
+    width: 60%;
+    margin: 0 auto;
+    padding: 30px 0;
+}
+
+.reviewer-img{
+    margin-bottom: 10px;
+    width: 200px;
+}
+
+.review-title{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 25px;
+    line-height: 37px;
+    color: #00E472;
+}
+
+.review-message{
+    margin-top: 5px;
+    color: rgba(255, 255, 255, 0.794);
+    font-weight: 100;
+}
+
+/*media queries*/
+@media only screen and (max-width: 768px)
+{
+    .review-outline-container{
+        width: 65%;
+        margin: 0 auto;
+    }
+
+    .review-message{
+        font-size: 14px;
+        font-weight: 100;
+        line-height: 1.6;
+        letter-spacing: 1px;
+
+    }
+
+    .reviewer-img{
+        width: 150px;
+    }
+}

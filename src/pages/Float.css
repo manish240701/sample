@@ -1,0 +1,36 @@
+.float-right{
+    transform: rotate(90deg);
+    position: relative;
+    right: 100px;
+    top: -54vh;
+    color: #00e472;
+}
+.float-left{
+    position: relative;
+    left: 70px;
+    top:-70vh
+}
+.float-img-left{
+    margin-bottom: 20px;
+    width: 14%;
+}
+
+@media only screen and (max-width: 1000px){
+    .float-left,.float-right{
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 1000px){
+    .float-right{
+        top: -85vh;
+    }
+}
+
+
+
+@media only screen and (max-width: 1220px){
+    .float-right{
+        top: -60vh;
+    }
+}

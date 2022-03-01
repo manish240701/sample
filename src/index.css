@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+body{
+    background: #181818 ;
+    font-family: poppins;
+}
+
+@media only screen and (min-width: 1000px){
+    .component-group{
+        position: relative;
+        top: -30vh;
+    }
+}
+
+/* linear-gradient(107.49deg, #181818 0%, rgba(24, 24, 24, 0.94) 135.5%) */

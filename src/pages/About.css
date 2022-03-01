@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+
+.about-outer-container{
+    margin-bottom: 130px;
+}
+
+.about-content-container{
+    padding: 30px;
+}
+
+.about-count-container{
+    font-size: 50px;
+    margin-top: 40px;
+}
+
+.about-count-number{
+    color: #00e472
+}
+
+
+.lecture-container,.project-container,.client-container{
+    line-height: 0.5;
+}
+
+.about-me-paragraph{
+    margin-top: 30px;
+    text-indent: 50px;
+    color: rgba(255, 255, 255, 0.767);
+    font-weight: lighter;
+    text-align: justify;
+    font-size: 20px;
+}
+
+.about-count-name{
+    font-size: 15px ;
+    color:rgb(158, 158, 158);
+    font-weight: normal;
+    line-height: 1.2;
+    text-align: center;
+}
+
+.about-btn{
+    margin-top: 30px;
+    background-color: #00e472;
+    color: #181818;
+    font-weight: bolder;
+    padding: 10px 30px;
+    border-radius: 3px;
+    filter: drop-shadow(0px 2px 20px rgba(0, 228, 114, 0.25));
+}
+
+/*Media Queries*/
+@media only screen and (max-width: 1100px) {
+    .about-me-paragraph{
+        margin-top: 10px;
+        font-size: 17px;
+    }
+    .about-content-container{
+        padding: 30px;
+    }
+}
+
+@media only screen and (max-width: 768px)
+{
+    .about-content-container{
+        text-align: center;
+        max-width: 100%;
+        margin: 0 auto;
+    }
+    .about-me-paragraph{
+        margin: 5% 7%;
+        text-align: center;
+        text-indent: 0;
+        font-size: 17px;
+        font-weight: lighter;
+        color: rgba(255, 255, 255, 0.555);
+    }
+    .aboutmeimg{
+        width: 50%;
+    }
+}
+
+
+@media only screen and (max-width: 756px) {
+    .count-countname-container{
+        margin-bottom: 30px;
+    }
+}
+
+

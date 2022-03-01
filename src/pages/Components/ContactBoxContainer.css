@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+
+
+.contact-quick-email, .contact-quick-phone{
+    background-color: #2C2C2C;
+    max-width: 100%;
+    backdrop-filter: blur(50px);
+    border-radius: 15px;
+    color: whitesmoke;
+    margin: 0 auto;
+    margin-top: 20px;
+    padding: 30px;
+    font-size: 17px;
+}
+
+
+
+.contact-box-container{
+    margin-top: 50px;
+    padding-bottom: 50px;
+}
+
+.quick-contact-head{
+    color: #00e472;
+    font-size: 25px;
+}
+
+.quick-contact-detail:link{
+    color: rgba(255, 255, 255, 0.74);
+    text-decoration: none;
+    font-weight: 100;
+}
+
+
+@media only screen and (min-width: 970px){
+    .contact-quick-email, .contact-quick-phone{
+        width: 80%;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .contact-box-container{
+        max-width: 60%;
+        margin: 0 auto;
+    }
+    .quick-contact-detail{
+        font-size: 15px;
+    }
+}
+
+@media only screen and (max-width: 525px) {
+    .contact-box-container{
+        max-width: 80%;
+        margin: 0 auto;
+    }
+}

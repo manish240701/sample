@@ -1,0 +1,16 @@
+.carousel{
+    width: 60%;
+    min-height: 100%;
+    margin: 0 auto;
+    background: #2C2C2C;
+    backdrop-filter: blur(50px);
+    border-radius: 31px;
+}
+
+/*media queries*/
+@media only screen and (max-width: 768px)
+{
+    .carousel{
+        width: 90%;
+    }
+}

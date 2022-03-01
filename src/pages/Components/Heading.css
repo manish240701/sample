@@ -1,0 +1,31 @@
+.headings-container-p{
+    margin-top: 100px;
+    line-height: 0.5;
+    color: rgb(255, 255, 255);
+    font-weight: lighter;
+}
+
+.headings-container-h1{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 60px;
+    color: #00E472;
+    margin-bottom: 60px;
+}
+
+@media only screen and (max-width: 1000px){
+    .headings-container-h1{
+        font-size: 30px;
+    }
+}
+
+@media only screen and (max-width: 767px)
+{
+    .headings-container-p{
+        margin-top: 80px;
+    }
+    .headings-container-h1{
+        margin-bottom: 20px;
+    }
+}
