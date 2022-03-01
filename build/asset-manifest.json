@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/static/css/main.33f8c37a.css",
+    "main.js": "/static/js/main.51cfbeac.js",
+    "static/media/Manish Resume.pdf": "/static/media/Manish Resume.d8822008ac252b62cfe6.pdf",
+    "static/media/aboutmeimg.png": "/static/media/aboutmeimg.153358a683d7428d6b14.png",
+    "static/media/landingbg.png": "/static/media/landingbg.b004b8f04e414bf70c91.png",
+    "static/media/project1.jpg": "/static/media/project1.225f048eec25beb7ae30.jpg",
+    "index.html": "/index.html",
+    "main.33f8c37a.css.map": "/static/css/main.33f8c37a.css.map",
+    "main.51cfbeac.js.map": "/static/js/main.51cfbeac.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.33f8c37a.css",
+    "static/js/main.51cfbeac.js"
+  ]
+}
