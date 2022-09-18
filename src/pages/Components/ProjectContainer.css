@@ -10,8 +10,12 @@
     border-radius: 7px;
 }
 
+.project-tag{
+    color: #00e472;
+    margin: 20px 0 0 0 ;
+}
 .project-head{
-    margin: 50px 0 15px 0 ;
+    margin: 20px 0 15px 0 ;
     font-size: 20px;
     color: rgb(190, 190, 190);
 }
@@ -25,6 +29,10 @@
     margin-bottom: 10px;
 }
 
+.individual-project{
+    width: 350px;
+}
+
 .project-preview-button:hover{
     background-color: #009249;
     color: rgb(17, 17, 17);
@@ -32,14 +40,18 @@
 
 @media only screen and (max-width: 768px){
     .project-box-container{
-        width: 50%;
+        width: 70%;
         margin: 0 auto;
     }
 }
 
 @media only screen and (max-width: 600px){
     .project-box-container{
-        width: 70%;
+        width: 100%;
         margin: 0 auto;
+    }
+    .individual-project{
+        column-gap: 0;
+        width: 280px;
     }
 }

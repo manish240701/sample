@@ -1,6 +1,6 @@
 import React from "react";
 import "./Home.css";
-import Resume from "../assets/Manish Resume.pdf"
+import Resume from "../assets/RESUME.pdf"
 import homeimg from "../assets/landingbg.png"
 const Home= ()=>{
     return(

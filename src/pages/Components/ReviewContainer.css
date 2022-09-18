@@ -6,6 +6,7 @@
     width: 60%;
     margin: 0 auto;
     padding: 30px 0;
+    background-color: #121212;;
 }
 
 .reviewer-img{
@@ -24,20 +25,21 @@
 .review-message{
     margin-top: 5px;
     color: rgba(255, 255, 255, 0.794);
-    font-weight: 100;
+    font-weight: 100 !important;
 }
 
 /*media queries*/
 @media only screen and (max-width: 768px)
 {
     .review-outline-container{
-        width: 65%;
+        width: 90%;
         margin: 0 auto;
     }
 
     .review-message{
+        font-family: Poppins;
         font-size: 14px;
-        font-weight: 100;
+        font-weight: 100 !important;
         line-height: 1.6;
         letter-spacing: 1px;
 

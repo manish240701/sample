@@ -1,83 +1,59 @@
 import React from "react";
 import "./Projects.css";
-import ProjectContainer from "./Components/ProjectContainer"
-import project1 from "../assets/project1.jpg"
+import ProjectContainer from "./Components/ProjectContainer";
 
-const Projects = () =>{
-    return (
+import {
+  collection,
+  onSnapshot,
+} from "firebase/firestore";
+import { useEffect, useState } from "react";
+import { db } from "../firebase";
 
-        // TODO:Projects Container
-        <div className="projects-outer-container text-center" id="projects">
-            
-            {/* TODO:row1 */}
-            <div className="row projects-row-1 text-center">
-                
-                {/*empty spaces for alignment*/}
-                <div className="col-md-2"></div>
+const Projects = () => {
+  //states
+  const [data, setData] = useState([]);
 
-                {/*TODO: Row1 Components group */}
-                <div className="col-md-8 text-center">
-                    <div className="row row1-component-row text-center">
-                        <div className="col-md-4 project-detail-container">
-                            <ProjectContainer img={project1} alt="project1" head="Subramania Bharathi Sports Club" link="https://www.sbsctn.com"/>
-                        </div>
-                        <div className="col-md-4 project-detail-container">
-                            <ProjectContainer img={project1} alt="project1" head="Subramania Bharathi Sports Club" link="https://www.sbsctn.com"/>
-                        </div>
-                        <div className="col-md-4 project-detail-container">
-                            <ProjectContainer img={project1} alt="project1" head="Subramania Bharathi Sports Club" link="https://www.sbsctn.com"/>
-                        </div>
-                    </div>
-                </div>
+  //handlers
+  useEffect(() => {
+    const fetchData = async () => {
+      const unsub = onSnapshot(collection(db, "projects"), (snapShot) => {
+        let list = [];
+        snapShot.docs.forEach((doc) => {
+          list.push({ id: doc.id, ...doc.data() });
+        });
+        console.log(list)
+        setData(list);
+        console.log(data)
+        return;
+      });
+      return () => {
+        unsub();
+      };
+    };
+    fetchData();
+  }, []);
 
-                {/*empty spaces for alignment*/}
-                <div className="col-md-2"></div>
+  return (
+    // TODO:Projects Container
+    <div className="projects-outer-container text-center" id="projects">
+      {data.map((d) => {
+        return (
+          <div className="individual-project text-center" key={d["project-name"]}>
+            <div className="text-center">
+              <div className="project-detail-container">
+                <ProjectContainer
+                  tag={d["project-tag"]}
+                  alt={d["project-name"]}
+                  head={d["project-name"]}
+                  link={d["project-link"]}
+                />
+              </div>
             </div>
-
-
-            {/* TODO:row2 */}
-            <div className="row projects-row-1 text-center">
-                
-                {/*empty spaces for alignment*/}
-                <div className="col-md-2"></div>
-
-                {/*TODO: Row2 Components group */}
-                <div className="col-md-8 text-center">
-                    <div className="row row2-component-row text-center">
-                        <div className="col-md-4 project-detail-container">
-                            <ProjectContainer img={project1} alt="project1" head="Subramania Bharathi Sports Club" link="https://www.sbsctn.com"/>
-                        </div>
-                        <div className="col-md-4 project-detail-container">
-                            <ProjectContainer img={project1} alt="project1" head="Subramania Bharathi Sports Club" link="https://www.sbsctn.com"/>
-                        </div>
-                        <div className="col-md-4 project-detail-container">
-                            <ProjectContainer img={project1} alt="project1" head="Subramania Bharathi Sports Club" link="https://www.sbsctn.com"/>
-                        </div>
-                    </div>
-                </div>
-
-                {/*empty spaces for alignment*/}
-                <div className="col-md-2"></div>
-            </div>
-
-        </div>        
-    )
-}
+          </div>
+        );
+      })}
+    </div>
+  );
+};
 
 export default Projects;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

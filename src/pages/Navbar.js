@@ -34,8 +34,15 @@ const Navbar = () =>{
                     <a className="nav-link color-white" href="#projects">projects</a>
                 </li>
 
-                <li className="nav-item ">
+                <li className="nav-item me-3">
                     <a className="nav-link color-white" href="#contact">contact</a>
+                </li>
+
+                <li className="quick-links">
+                    <a className="nav-link color-white" href="https://manish240701.github.io/leo/">
+                        <span className="black">Reach Me</span>
+                    </a>
+
                 </li>
                 
             </ul>

@@ -9,15 +9,15 @@ const Float = () => {
         <div className="float-container">
             <div className="row float-rows">
                 <div className="float-left col-md-2 text-center">
-                    <a href="#">
+                    <a href="https://www.linkedin.com/in/manish-kumar-r-998b62200/">
                         <img src={linkedin} className="image-fluid float-img-left" alt="linkedin" /><br />
                     </a>
 
-                    <a href="#">
+                    <a href="https://wa.link/j3lvec">
                         <img src={whatsapp} className="image-fluid float-img-left" alt="whatsapp" /><br />
                     </a>
 
-                    <a href="#">
+                    <a href="https://github.com/manish240701">
                         <img src={github} className="image-fluid float-img-left" alt="github" /><br />
                     </a>
 
